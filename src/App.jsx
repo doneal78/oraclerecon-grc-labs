@@ -77,14 +77,12 @@ function App() {
       <nav className="nav">
         <a href="#top" className="nav-brand">
           OracleRecon <span>GRC Labs</span>
-        </a>
         <div className="nav-links">
           <a href="#builds">Builds</a>
           <a href="#method">Method</a>
           <a href="#about">About</a>
           <a href="https://davidoneal.dev" className="nav-ext" target="_blank" rel="noopener noreferrer">
             davidoneal.dev ↗
-          </a>
         </div>
       </nav>
 
@@ -102,10 +100,8 @@ function App() {
         <div className="hero-actions">
           <a href="#builds" className="btn-primary">
             View the builds <FaArrowRight size={13} />
-          </a>
           <a href="https://davidoneal.dev" className="btn-secondary" target="_blank" rel="noopener noreferrer">
             Full portfolio ↗
-          </a>
         </div>
 
         <div className="terminal">
@@ -164,13 +160,7 @@ function App() {
             <p>GRC Engineering Club · Issued July 21, 2026 · Valid July 21, 2027</p>
           </div>
           
-            href="https://cert.grcengclub.com/verify/cgeaud-3f4e4e28-c2e9-4162-9b6b-48e06b47caaf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cert-verify-btn"
-          >
-            Verify credential ↗
-          </a>
+          <a href="https://cert.grcengclub.com/verify/cgeaud-3f4e4e28-c2e9-4162-9b6b-48e06b47caaf" target="_blank" rel="noopener noreferrer" className="cert-verify-btn">Verify credential</a>
         </div>
 
         <div className="builds-grid">
@@ -190,13 +180,9 @@ function App() {
                     
                       key={l.label}
                       href={l.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
                       className={`build-link ${l.primary ? 'build-link-primary' : ''}`}
-                    >
                       <LinkIcon type={l.icon} />
                       {l.label} ↗
-                    </a>
                   ))}
                 </div>
               )}
@@ -247,10 +233,8 @@ function App() {
             <div style={{marginTop:'1.5rem', display:'flex', gap:'1rem', flexWrap:'wrap'}}>
               <a href="https://davidoneal.dev" className="btn-secondary" target="_blank" rel="noopener noreferrer">
                 Full portfolio ↗
-              </a>
               <a href="https://linkedin.com/in/david-oneal" className="btn-secondary" target="_blank" rel="noopener noreferrer">
                 LinkedIn ↗
-              </a>
             </div>
           </div>
           <div className="about-stack">
@@ -280,13 +264,10 @@ function App() {
         <div className="connect-links">
           <a href="https://linkedin.com/in/david-oneal" className="btn-primary" target="_blank" rel="noopener noreferrer">
             <FaLinkedin size={16} /> Connect on LinkedIn
-          </a>
           <a href="https://gitlab.com/doneal78-group" className="btn-secondary" target="_blank" rel="noopener noreferrer">
             <FaGitlab size={16} /> View the code
-          </a>
           <a href="https://github.com/doneal78" className="btn-secondary" target="_blank" rel="noopener noreferrer">
             <FaGithub size={16} /> GitHub
-          </a>
         </div>
       </div>
 
@@ -297,7 +278,6 @@ function App() {
         </div>
         <a href="https://davidoneal.dev" className="footer-link">
           davidoneal.dev ↗
-        </a>
       </footer>
     </div>
   )
