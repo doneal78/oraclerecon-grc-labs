@@ -1,4 +1,4 @@
-import { FaGithub, FaGitlab, FaLinkedin, FaExternalLinkAlt, FaArrowRight } from 'react-icons/fa'
+﻿import { FaGithub, FaGitlab, FaLinkedin, FaExternalLinkAlt } from 'react-icons/fa'
 import './App.css'
 
 const builds = [
@@ -6,7 +6,7 @@ const builds = [
     num: '01',
     tag: 'FLAGSHIP BUILD',
     name: 'Compliance Automation Lab',
-    metric: '40% AT RISK → 78% NEEDS IMPROVEMENT',
+    metric: '40% AT RISK to 78% NEEDS IMPROVEMENT',
     desc: 'A live GRC engineering build on AWS following the AJ Yawn curriculum. Python control mapping across NIST 800-53, ISO 27001, and SOC 2. Flask risk scoring app. boto3 AWS Config compliance checker. Terraform baseline deployed to a live account. Security Hub CSPM with FSBP and CIS v1.2.0. GitHub Actions CI/CD gate blocking non-compliant configs before merge. Cosign keyless signing with tamper verification on infrastructure artifacts.',
     tags: ['Python', 'Terraform', 'AWS Security Hub', 'boto3', 'GitHub Actions', 'NIST 800-53', 'OSCAL'],
     links: [
@@ -17,7 +17,7 @@ const builds = [
     num: '02',
     tag: 'LIVE TOOL',
     name: 'OracleRecon Shield',
-    metric: 'Assessment time: days → under 30 minutes',
+    metric: 'Assessment time: days to under 30 minutes',
     desc: 'AI-powered SMB risk assessment platform built on Google Gemini 2.5 Flash. Business owners answer 25 questions across 6 security domains and receive a risk grade, prioritized vulnerabilities, and a remediation roadmap. Concept to live in under 8 hours, built solo.',
     tags: ['Gemini 2.5 Flash', 'React', 'AI Risk Assessment', 'Prompt Engineering'],
     links: [
@@ -28,7 +28,7 @@ const builds = [
     num: '03',
     tag: 'WEEKLY CHALLENGES',
     name: 'GRC Engineering Club Builds',
-    metric: 'CGE-AUD certified · July 2026',
+    metric: 'CGE-AUD certified July 2026',
     desc: 'Five weekly challenge builds completed in public on LinkedIn. GitHub Actions CI/CD gate that blocks non-compliant Terraform configs before merge. Cosign keyless signing with tamper verification on infrastructure artifacts. NIST 800-53 Rev 5 baseline deployed into a live Security Hub account alongside FSBP and CIS v1.2.0.',
     tags: ['GitHub Actions', 'Cosign', 'NIST 800-53 Rev 5', 'Policy-as-Code', 'CI/CD'],
     links: [
@@ -77,16 +77,15 @@ function App() {
       <nav className="nav">
         <a href="#top" className="nav-brand">
           OracleRecon <span>GRC Labs</span>
+        </a>
         <div className="nav-links">
           <a href="#builds">Builds</a>
           <a href="#method">Method</a>
           <a href="#about">About</a>
-          <a href="https://davidoneal.dev" className="nav-ext" target="_blank" rel="noopener noreferrer">
-            davidoneal.dev ↗
+          <a href="https://davidoneal.dev" className="nav-ext" target="_blank" rel="noopener noreferrer">davidoneal.dev</a>
         </div>
       </nav>
 
-      {/* HERO */}
       <section className="hero" id="top">
         <div className="hero-label">OracleRecon GRC Labs</div>
         <h1>
@@ -95,13 +94,11 @@ function App() {
         </h1>
         <p className="hero-sub">
           A public build log of GRC engineering work on AWS. Real accounts, live findings,
-          signed artifacts, and automated evidence. Not described — deployed.
+          signed artifacts, and automated evidence. Not described, deployed.
         </p>
         <div className="hero-actions">
-          <a href="#builds" className="btn-primary">
-            View the builds <FaArrowRight size={13} />
-          <a href="https://davidoneal.dev" className="btn-secondary" target="_blank" rel="noopener noreferrer">
-            Full portfolio ↗
+          <a href="#builds" className="btn-primary">View the builds</a>
+          <a href="https://davidoneal.dev" className="btn-secondary" target="_blank" rel="noopener noreferrer">Full portfolio</a>
         </div>
 
         <div className="terminal">
@@ -109,23 +106,22 @@ function App() {
             <div className="terminal-dot" style={{background:'#FF5F57'}} />
             <div className="terminal-dot" style={{background:'#FFBD2E'}} />
             <div className="terminal-dot" style={{background:'#28C840'}} />
-            <span className="terminal-title">compliance-automation-lab — aws-security-hub</span>
+            <span className="terminal-title">compliance-automation-lab -- aws-security-hub</span>
           </div>
           <div className="terminal-body">
-            <div><span className="t-cmd">$</span> <span className="t-comment"># Security Hub CSPM baseline — live account</span></div>
+            <div><span className="t-cmd">$</span> <span className="t-comment"># Security Hub CSPM baseline -- live account</span></div>
             <div><span className="t-cmd">$</span> terraform apply -auto-approve</div>
-            <div style={{marginTop:'0.5rem'}}><span className="t-key">aws_securityhub_standards_subscription</span><span className="t-val"> FSBP </span>→ <span className="t-good">created</span></div>
-            <div><span className="t-key">aws_securityhub_standards_subscription</span><span className="t-val"> CIS v1.2.0 </span>→ <span className="t-good">created</span></div>
-            <div><span className="t-key">aws_securityhub_standards_subscription</span><span className="t-val"> NIST 800-53 Rev 5 </span>→ <span className="t-good">created</span></div>
+            <div style={{marginTop:'0.5rem'}}><span className="t-key">aws_securityhub_standards_subscription</span> <span className="t-val">FSBP</span> <span className="t-good">created</span></div>
+            <div><span className="t-key">aws_securityhub_standards_subscription</span> <span className="t-val">CIS v1.2.0</span> <span className="t-good">created</span></div>
+            <div><span className="t-key">aws_securityhub_standards_subscription</span> <span className="t-val">NIST 800-53 Rev 5</span> <span className="t-good">created</span></div>
             <div style={{marginTop:'0.5rem'}}><span className="t-comment"># Compliance posture delta</span></div>
-            <div><span className="t-key">BEFORE</span>  <span className="t-warn">40% AT RISK</span></div>
-            <div><span className="t-key">AFTER </span>  <span className="t-good">78% NEEDS IMPROVEMENT</span></div>
+            <div><span className="t-key">BEFORE</span> <span className="t-warn">40% AT RISK</span></div>
+            <div><span className="t-key">AFTER</span> <span className="t-good">78% NEEDS IMPROVEMENT</span></div>
             <div style={{marginTop:'0.5rem'}}><span className="t-cmd">$</span> <span className="t-cursor" /></div>
           </div>
         </div>
       </section>
 
-      {/* STATS */}
       <div className="stats-bar">
         <div className="stat">
           <span className="stat-num">4</span>
@@ -145,7 +141,6 @@ function App() {
         </div>
       </div>
 
-      {/* BUILDS */}
       <section className="section" id="builds">
         <div className="section-label">// builds</div>
         <h2>Work that ships evidence,<br />not slide decks.</h2>
@@ -157,9 +152,8 @@ function App() {
         <div className="cert-banner">
           <div className="cert-banner-text">
             <h3>Certified GRC Engineer, Auditor Specialty (CGE-AUD)</h3>
-            <p>GRC Engineering Club · Issued July 21, 2026 · Valid July 21, 2027</p>
+            <p>GRC Engineering Club - Issued July 21, 2026 - Valid July 21, 2027</p>
           </div>
-          
           <a href="https://cert.grcengclub.com/verify/cgeaud-3f4e4e28-c2e9-4162-9b6b-48e06b47caaf" target="_blank" rel="noopener noreferrer" className="cert-verify-btn">Verify credential</a>
         </div>
 
@@ -172,17 +166,17 @@ function App() {
               <div className="build-metric">{b.metric}</div>
               <p>{b.desc}</p>
               <div className="build-tags">
-                {b.tags.map(t => <span className="tag" key={t}>{t}</span>)}
+                {b.tags.map(t => (
+                  <span className="tag" key={t}>{t}</span>
+                ))}
               </div>
               {b.links.length > 0 && (
                 <div className="build-links">
                   {b.links.map(l => (
-                    
-                      key={l.label}
-                      href={l.href}
-                      className={`build-link ${l.primary ? 'build-link-primary' : ''}`}
+                    <a key={l.label} href={l.href} target="_blank" rel="noopener noreferrer" className={l.primary ? 'build-link build-link-primary' : 'build-link'}>
                       <LinkIcon type={l.icon} />
-                      {l.label} ↗
+                      {l.label}
+                    </a>
                   ))}
                 </div>
               )}
@@ -191,7 +185,6 @@ function App() {
         </div>
       </section>
 
-      {/* METHOD */}
       <section className="section" id="method">
         <div className="section-label">// method</div>
         <h2>Governance should leave<br />evidence behind.</h2>
@@ -210,14 +203,13 @@ function App() {
         </div>
       </section>
 
-      {/* ABOUT */}
       <section className="section" id="about">
         <div className="section-label">// about</div>
         <h2>Built from the compliance<br />layer up.</h2>
         <div className="about-grid">
           <div className="about-text">
             <p>
-              I'm David O'Neal, a GRC engineer and AI security practitioner with 8+ years
+              I am David O'Neal, a GRC engineer and AI security practitioner with 8+ years
               across IT operations, security operations, and compliance in financial services,
               government, aerospace, and industrial environments.
             </p>
@@ -231,53 +223,52 @@ function App() {
               SMBs that need practical security guidance without a full-time security team.
             </p>
             <div style={{marginTop:'1.5rem', display:'flex', gap:'1rem', flexWrap:'wrap'}}>
-              <a href="https://davidoneal.dev" className="btn-secondary" target="_blank" rel="noopener noreferrer">
-                Full portfolio ↗
-              <a href="https://linkedin.com/in/david-oneal" className="btn-secondary" target="_blank" rel="noopener noreferrer">
-                LinkedIn ↗
+              <a href="https://davidoneal.dev" className="btn-secondary" target="_blank" rel="noopener noreferrer">Full portfolio</a>
+              <a href="https://linkedin.com/in/david-oneal" className="btn-secondary" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
           </div>
           <div className="about-stack">
             <h4>Frameworks</h4>
             <ul className="stack-list">
-              {['NIST 800-53', 'NIST AI RMF', 'ISO 27001', 'SOC 2', 'NIST CSF'].map(s => <li key={s}>{s}</li>)}
+              {['NIST 800-53', 'NIST AI RMF', 'ISO 27001', 'SOC 2', 'NIST CSF'].map(s => (
+                <li key={s}>{s}</li>
+              ))}
             </ul>
-            <h4>Cloud & Automation</h4>
+            <h4>Cloud and Automation</h4>
             <ul className="stack-list">
-              {['AWS Security Hub', 'Terraform', 'boto3', 'GitHub Actions', 'Python', 'Flask', 'Cosign'].map(s => <li key={s}>{s}</li>)}
+              {['AWS Security Hub', 'Terraform', 'boto3', 'GitHub Actions', 'Python', 'Flask', 'Cosign'].map(s => (
+                <li key={s}>{s}</li>
+              ))}
             </ul>
-            <h4>AI & Security</h4>
+            <h4>AI and Security</h4>
             <ul className="stack-list">
-              {['Gemini 2.5 Flash', 'Prompt Engineering', 'Ollama', 'AI Risk Assessment', 'Splunk', 'Tenable.io'].map(s => <li key={s}>{s}</li>)}
+              {['Gemini 2.5 Flash', 'Prompt Engineering', 'Ollama', 'AI Risk Assessment', 'Splunk', 'Tenable.io'].map(s => (
+                <li key={s}>{s}</li>
+              ))}
             </ul>
           </div>
         </div>
       </section>
 
-      {/* CONNECT */}
       <div className="connect-section" id="connect">
-        <h2>Let's make the compliance<br />inspectable.</h2>
-        <p>
-          Interested in GRC engineering, cloud compliance automation,
-          or AI security governance?
-        </p>
+        <h2>Let us make the compliance<br />inspectable.</h2>
+        <p>Interested in GRC engineering, cloud compliance automation, or AI security governance?</p>
         <div className="connect-links">
           <a href="https://linkedin.com/in/david-oneal" className="btn-primary" target="_blank" rel="noopener noreferrer">
             <FaLinkedin size={16} /> Connect on LinkedIn
+          </a>
           <a href="https://gitlab.com/doneal78-group" className="btn-secondary" target="_blank" rel="noopener noreferrer">
             <FaGitlab size={16} /> View the code
+          </a>
           <a href="https://github.com/doneal78" className="btn-secondary" target="_blank" rel="noopener noreferrer">
             <FaGithub size={16} /> GitHub
+          </a>
         </div>
       </div>
 
-      {/* FOOTER */}
       <footer className="footer">
-        <div className="footer-brand">
-          <span>OracleRecon</span> GRC Labs · David O'Neal
-        </div>
-        <a href="https://davidoneal.dev" className="footer-link">
-          davidoneal.dev ↗
+        <div className="footer-brand"><span>OracleRecon</span> GRC Labs - David O'Neal</div>
+        <a href="https://davidoneal.dev" className="footer-link">davidoneal.dev</a>
       </footer>
     </div>
   )
