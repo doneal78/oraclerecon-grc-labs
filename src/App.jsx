@@ -28,12 +28,12 @@ const builds = [
     num: '03',
     tag: 'WEEKLY CHALLENGES',
     name: 'GRC Engineering Club Builds',
-    metric: 'CGE-AUD certified July 2026',
-    desc: 'Five weekly challenge builds completed in public on LinkedIn. GitHub Actions CI/CD gate that blocks non-compliant Terraform configs before merge. Cosign keyless signing with tamper verification on infrastructure artifacts. NIST 800-53 Rev 5 baseline deployed into a live Security Hub account alongside FSBP and CIS v1.2.0.',
+    metric: 'CGE-AUD certified · July 2026 · 6 of 6 weeks complete',
+    desc: 'Six weekly challenge builds submitted to the GRC Engineering Club prize pool. GitHub Actions CI/CD gate blocks non-compliant Terraform configs before merge. Cosign keyless signing with cryptographic chain of custody on all evidence artifacts. NIST 800-53 Rev 5 baseline deployed into a live Security Hub account. Two OSCAL documents validated with trestle returning VALID. Deliberate SC-28 regression blocked at platform level with preserved evidence artifact.',
     tags: ['GitHub Actions', 'Cosign', 'NIST 800-53 Rev 5', 'Policy-as-Code', 'CI/CD'],
     links: [
       { label: 'Club profile', href: 'https://directory.grcengclub.com/engineers/doneal78/', icon: 'ext', primary: false },
-      { label: 'GitLab', href: 'https://gitlab.com/doneal78-group', icon: 'gitlab', primary: false }
+      { label: 'Pipeline repo', href: 'https://github.com/doneal78/grc-engineering-pipeline', icon: 'github', primary: true }
     ]
   },
   {
@@ -132,7 +132,7 @@ function App() {
           <span className="stat-label">AWS frameworks active</span>
         </div>
         <div className="stat">
-          <span className="stat-num">5</span>
+          <span className="stat-num">6</span>
           <span className="stat-label">GRC Club challenges</span>
         </div>
         <div className="stat">
