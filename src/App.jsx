@@ -142,7 +142,7 @@ function App() {
       </div>
 
       <section className="section" id="builds">
-        <div className="section-label">// builds</div>
+        <div className="section-label">// builds section</div>
         <h2>Work that ships evidence,<br />not slide decks.</h2>
         <p className="section-sub">
           Each build starts with a real compliance problem and ends with
