@@ -6,22 +6,22 @@ const builds = [
     num: '01',
     tag: 'FLAGSHIP BUILD',
     name: 'Compliance Automation Lab',
-    metric: '40% AT RISK to 78% NEEDS IMPROVEMENT',
+     metric: '40% AT RISK to 83% GOOD across 10 projects',
     desc: 'A live GRC engineering build on AWS following the AJ Yawn curriculum. Python control mapping across NIST 800-53, ISO 27001, and SOC 2. Flask risk scoring app. boto3 AWS Config compliance checker. Terraform baseline deployed to a live account. Security Hub CSPM with FSBP and CIS v1.2.0. GitHub Actions CI/CD gate blocking non-compliant configs before merge. Cosign keyless signing with tamper verification on infrastructure artifacts.',
     tags: ['Python', 'Terraform', 'AWS Security Hub', 'boto3', 'GitHub Actions', 'NIST 800-53', 'OSCAL'],
-    links: [
-      { label: 'GitLab', href: 'https://gitlab.com/doneal78-group', icon: 'gitlab', primary: false }
+        links: [
+      { label: 'GitHub', href: 'https://github.com/doneal78/grc-compliance-checker', icon: 'github', primary: true }
     ]
   },
   {
     num: '02',
-    tag: 'LIVE TOOL',
-    name: 'OracleRecon Shield',
-    metric: 'Assessment time: days to under 30 minutes',
-    desc: 'AI-powered SMB risk assessment platform built on Google Gemini 2.5 Flash. Business owners answer 25 questions across 6 security domains and receive a risk grade, prioritized vulnerabilities, and a remediation roadmap. Concept to live in under 8 hours, built solo.',
-    tags: ['Gemini 2.5 Flash', 'React', 'AI Risk Assessment', 'Prompt Engineering'],
+    tag: 'EVIDENCE PIPELINE',
+    name: 'SOC 2 Evidence Pipeline',
+    metric: '457 Security Hub findings mapped to SOC 2 Trust Services Criteria',
+    desc: 'Python pipeline that pulls live Security Hub findings and AWS Config compliance data using boto3, processes them through pandas, and generates a formatted Excel workbook with sheets mapped to SOC 2 Trust Services Criteria categories. Replaces manual screenshot-based evidence collection with a repeatable, code-driven process.',
+    tags: ['Python', 'boto3', 'AWS Security Hub', 'AWS Config', 'pandas', 'SOC 2'],
     links: [
-      { label: 'Launch app', href: 'https://shield.davidoneal.dev', icon: 'ext', primary: true }
+      { label: 'GitHub', href: 'https://github.com/doneal78/grc-soc2-pipeline', icon: 'github', primary: true }
     ]
   },
   {
@@ -38,12 +38,14 @@ const builds = [
   },
   {
     num: '04',
-    tag: 'DETECTION LAB',
-    name: 'Cybersecurity Home Lab',
-    metric: 'TCM Security PSAA curriculum',
-    desc: 'VirtualBox lab with Windows and Ubuntu workstations standing in for a small enterprise network. Hands-on IR, log analysis, and detection engineering practice outside of work. Supporting PSAA certification preparation.',
-    tags: ['VirtualBox', 'Windows Server', 'Ubuntu', 'Splunk', 'Detection Engineering'],
-    links: []
+    tag: 'OSCAL SSP',
+    name: 'OSCAL System Security Plan',
+    metric: '21 NIST 800-53 controls — trestle validate VALID',
+    desc: 'Machine-readable System Security Plan documenting 21 NIST 800-53 controls in OSCAL 1.2.1 format. Component definitions map each control to its implementation evidence and signed artifacts. Validated with compliance-trestle returning VALID on both the component definition and profile documents. Built for FedRAMP and federal compliance contexts where OSCAL is increasingly required.',
+    tags: ['OSCAL 1.2.1', 'compliance-trestle', 'NIST 800-53', 'Python', 'FedRAMP'],
+    links: [
+      { label: 'GitHub', href: 'https://github.com/doneal78/grc-oscal-ssp', icon: 'github', primary: true }
+    ]
   }
 ]
 
@@ -124,8 +126,8 @@ function App() {
 
       <div className="stats-bar">
         <div className="stat">
-          <span className="stat-num">4</span>
-          <span className="stat-label">Builds in production</span>
+          <span className="stat-num">10</span>
+          <span className="stat-label">Projects completed</span>
         </div>
         <div className="stat">
           <span className="stat-num">3</span>
