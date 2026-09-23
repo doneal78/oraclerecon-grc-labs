@@ -259,8 +259,8 @@ function App() {
           <a href="https://linkedin.com/in/david-oneal" className="btn-primary" target="_blank" rel="noopener noreferrer">
             <FaLinkedin size={16} /> Connect on LinkedIn
           </a>
-          <a href="https://gitlab.com/doneal78-group" className="btn-secondary" target="_blank" rel="noopener noreferrer">
-            <FaGitlab size={16} /> View the code
+           <a href="https://github.com/doneal78" className="btn-secondary" target="_blank" rel="noopener noreferrer">
+            <FaGithub size={16} /> View the code
           </a>
           <a href="https://github.com/doneal78" className="btn-secondary" target="_blank" rel="noopener noreferrer">
             <FaGithub size={16} /> GitHub
