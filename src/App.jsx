@@ -29,7 +29,7 @@ const builds = [
     tag: 'WEEKLY CHALLENGES',
     name: 'GRC Engineering Club Builds',
     metric: 'CGE-AUD certified · July 2026 · 6 of 6 weeks complete',
-    desc: 'Six weekly challenge builds submitted to the GRC Engineering Club prize pool. GitHub Actions CI/CD gate blocks non-compliant Terraform configs before merge. Cosign keyless signing with cryptographic chain of custody on all evidence artifacts. NIST 800-53 Rev 5 baseline deployed into a live Security Hub account. Two OSCAL documents validated with trestle returning VALID. Deliberate SC-28 regression blocked at platform level with preserved evidence artifact.',
+    desc: 'Six weekly challenge builds submitted to the GRC Engineering Club prize pool. GitHub Actions CI/CD gate blocks non-compliant Terraform configs before merge. Cosign keyless signing with cryptographic chain of custody on all evidence artifacts. NIST 800-53 Rev 5 baseline deployed into a live Security Hub account. Two OSCAL documents validated with trestle returning VALID. Deliberate CM-6 tagging violation blocked at platform level with preserved evidence artifact.',
     tags: ['GitHub Actions', 'Cosign', 'NIST 800-53 Rev 5', 'Policy-as-Code', 'CI/CD'],
     links: [
       { label: 'Club profile', href: 'https://directory.grcengclub.com/engineers/doneal78/', icon: 'ext', primary: false },
@@ -40,7 +40,7 @@ const builds = [
     num: '04',
     tag: 'OSCAL SSP',
     name: 'OSCAL System Security Plan',
-    metric: '21 NIST 800-53 controls — trestle validate VALID',
+    metric: '21 NIST 800-53 controls, trestle validate VALID',
     desc: 'Machine-readable System Security Plan documenting 21 NIST 800-53 controls in OSCAL 1.2.1 format. Component definitions map each control to its implementation evidence and signed artifacts. Validated with compliance-trestle returning VALID on both the component definition and profile documents. Built for FedRAMP and federal compliance contexts where OSCAL is increasingly required.',
     tags: ['OSCAL 1.2.1', 'compliance-trestle', 'NIST 800-53', 'Python', 'FedRAMP'],
     links: [
