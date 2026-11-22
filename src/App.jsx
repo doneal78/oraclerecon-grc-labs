@@ -1,4 +1,4 @@
-﻿import { FaGithub, FaGitlab, FaLinkedin, FaExternalLinkAlt } from 'react-icons/fa'
+﻿import { FaGithub, FaLinkedin, FaExternalLinkAlt } from 'react-icons/fa'
 import './App.css'
 
 const builds = [
@@ -68,7 +68,6 @@ const methods = [
 ]
 
 function LinkIcon({ type }) {
-  if (type === 'gitlab') return <FaGitlab size={13} />
   if (type === 'github') return <FaGithub size={13} />
   return <FaExternalLinkAlt size={11} />
 }
@@ -78,7 +77,7 @@ function App() {
     <div className="app">
       <nav className="nav">
         <a href="#top" className="nav-brand">
-          OracleRecon <span>GRC Labs</span>
+          ControlRecon <span>GRC Labs</span>
         </a>
         <div className="nav-links">
           <a href="#builds">Builds</a>
@@ -89,7 +88,7 @@ function App() {
       </nav>
 
       <section className="hero" id="top">
-        <div className="hero-label">OracleRecon GRC Labs</div>
+        <div className="hero-label">ControlRecon GRC Labs</div>
         <h1>
           GRC engineering built in code.<br />
           Compliance posture <em>proven in production.</em>
@@ -221,7 +220,7 @@ function App() {
               No slide decks. No screenshots of someone else's dashboard.
             </p>
             <p>
-              I founded OracleRecon to deliver GRC and AI security advisory services to
+              I founded ControlRecon to deliver GRC and AI security advisory services to
               SMBs that need practical security guidance without a full-time security team.
             </p>
             <div style={{marginTop:'1.5rem', display:'flex', gap:'1rem', flexWrap:'wrap'}}>
@@ -232,7 +231,7 @@ function App() {
           <div className="about-stack">
             <h4>Frameworks</h4>
             <ul className="stack-list">
-              {['NIST 800-53', 'NIST AI RMF', 'ISO 27001', 'SOC 2', 'NIST CSF'].map(s => (
+              {['NIST 800-53', 'NIST AI RMF', 'ISO 27001', 'SOC 2'].map(s => (
                 <li key={s}>{s}</li>
               ))}
             </ul>
@@ -269,7 +268,7 @@ function App() {
       </div>
 
       <footer className="footer">
-        <div className="footer-brand"><span>OracleRecon</span> GRC Labs - David O'Neal</div>
+        <div className="footer-brand"><span>ControlRecon</span> GRC Labs - David O'Neal</div>
         <a href="https://davidoneal.dev" className="footer-link">davidoneal.dev</a>
       </footer>
     </div>
