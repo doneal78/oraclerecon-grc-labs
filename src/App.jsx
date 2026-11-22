@@ -160,6 +160,13 @@ function App() {
           </div>
           <div className="cert-banner">
             <div className="cert-banner-text">
+              <h3>ISO/IEC 27001:2022 Lead Auditor</h3>
+              <p>Certificate of Competency earned through training and a skills-based exam. Mastermind Assurance - Issued November 2026 - Expires November 8, 2029</p>
+            </div>
+            <a href="https://www.credly.com/badges/65b58dff-8353-4eaa-b75f-98f19e344e36" target="_blank" rel="noopener noreferrer" className="cert-verify-btn">Verify credential</a>
+          </div>
+          <div className="cert-banner">
+            <div className="cert-banner-text">
               <h3>ISO/IEC 42001:2023 Lead Auditor (Mastermind Assurance), in progress</h3>
             </div>
           </div>
