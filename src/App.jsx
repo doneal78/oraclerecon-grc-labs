@@ -1,4 +1,4 @@
-﻿import { FaGithub, FaGitlab, FaLinkedin, FaExternalLinkAlt } from 'react-icons/fa'
+﻿import { FaGithub, FaLinkedin, FaExternalLinkAlt } from 'react-icons/fa'
 import './App.css'
 
 const builds = [
@@ -68,7 +68,6 @@ const methods = [
 ]
 
 function LinkIcon({ type }) {
-  if (type === 'gitlab') return <FaGitlab size={13} />
   if (type === 'github') return <FaGithub size={13} />
   return <FaExternalLinkAlt size={11} />
 }
@@ -78,7 +77,7 @@ function App() {
     <div className="app">
       <nav className="nav">
         <a href="#top" className="nav-brand">
-          OracleRecon <span>GRC Labs</span>
+          ControlRecon <span>GRC Labs</span>
         </a>
         <div className="nav-links">
           <a href="#builds">Builds</a>
@@ -89,7 +88,7 @@ function App() {
       </nav>
 
       <section className="hero" id="top">
-        <div className="hero-label">OracleRecon GRC Labs</div>
+        <div className="hero-label">ControlRecon GRC Labs</div>
         <h1>
           GRC engineering built in code.<br />
           Compliance posture <em>proven in production.</em>
@@ -151,12 +150,26 @@ function App() {
           deployable code, auditable artifacts, and measurable posture improvement.
         </p>
 
-        <div className="cert-banner">
-          <div className="cert-banner-text">
-            <h3>Certified GRC Engineer, Auditor Specialty (CGE-AUD)</h3>
-            <p>GRC Engineering Club - Issued July 21, 2026 - Valid July 21, 2027</p>
+        <div className="cert-list">
+          <div className="cert-banner">
+            <div className="cert-banner-text">
+              <h3>Certified GRC Engineer, Auditor Specialty (CGE-AUD)</h3>
+              <p>GRC Engineering Club - Issued July 21, 2026 - Valid July 21, 2027</p>
+            </div>
+            <a href="https://cert.grcengclub.com/verify/cgeaud-3f4e4e28-c2e9-4162-9b6b-48e06b47caaf" target="_blank" rel="noopener noreferrer" className="cert-verify-btn">Verify credential</a>
           </div>
-          <a href="https://cert.grcengclub.com/verify/cgeaud-3f4e4e28-c2e9-4162-9b6b-48e06b47caaf" target="_blank" rel="noopener noreferrer" className="cert-verify-btn">Verify credential</a>
+          <div className="cert-banner">
+            <div className="cert-banner-text">
+              <h3>ISO/IEC 27001:2022 Lead Auditor</h3>
+              <p>Certificate of Competency earned through training and a skills-based exam. Mastermind Assurance - Issued November 2026 - Expires November 8, 2029</p>
+            </div>
+            <a href="https://www.credly.com/badges/65b58dff-8353-4eaa-b75f-98f19e344e36" target="_blank" rel="noopener noreferrer" className="cert-verify-btn">Verify credential</a>
+          </div>
+          <div className="cert-banner">
+            <div className="cert-banner-text">
+              <h3>ISO/IEC 42001:2023 Lead Auditor (Mastermind Assurance), in progress</h3>
+            </div>
+          </div>
         </div>
 
         <div className="builds-grid">
@@ -221,7 +234,7 @@ function App() {
               No slide decks. No screenshots of someone else's dashboard.
             </p>
             <p>
-              I founded OracleRecon to deliver GRC and AI security advisory services to
+              I founded ControlRecon to deliver GRC and AI security advisory services to
               SMBs that need practical security guidance without a full-time security team.
             </p>
             <div style={{marginTop:'1.5rem', display:'flex', gap:'1rem', flexWrap:'wrap'}}>
@@ -232,7 +245,7 @@ function App() {
           <div className="about-stack">
             <h4>Frameworks</h4>
             <ul className="stack-list">
-              {['NIST 800-53', 'NIST AI RMF', 'ISO 27001', 'SOC 2', 'NIST CSF'].map(s => (
+              {['NIST 800-53', 'NIST AI RMF', 'ISO 27001', 'SOC 2'].map(s => (
                 <li key={s}>{s}</li>
               ))}
             </ul>
@@ -269,7 +282,7 @@ function App() {
       </div>
 
       <footer className="footer">
-        <div className="footer-brand"><span>OracleRecon</span> GRC Labs - David O'Neal</div>
+        <div className="footer-brand"><span>ControlRecon</span> GRC Labs - David O'Neal</div>
         <a href="https://davidoneal.dev" className="footer-link">davidoneal.dev</a>
       </footer>
     </div>
