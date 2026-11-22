@@ -150,12 +150,19 @@ function App() {
           deployable code, auditable artifacts, and measurable posture improvement.
         </p>
 
-        <div className="cert-banner">
-          <div className="cert-banner-text">
-            <h3>Certified GRC Engineer, Auditor Specialty (CGE-AUD)</h3>
-            <p>GRC Engineering Club - Issued July 21, 2026 - Valid July 21, 2027</p>
+        <div className="cert-list">
+          <div className="cert-banner">
+            <div className="cert-banner-text">
+              <h3>Certified GRC Engineer, Auditor Specialty (CGE-AUD)</h3>
+              <p>GRC Engineering Club - Issued July 21, 2026 - Valid July 21, 2027</p>
+            </div>
+            <a href="https://cert.grcengclub.com/verify/cgeaud-3f4e4e28-c2e9-4162-9b6b-48e06b47caaf" target="_blank" rel="noopener noreferrer" className="cert-verify-btn">Verify credential</a>
           </div>
-          <a href="https://cert.grcengclub.com/verify/cgeaud-3f4e4e28-c2e9-4162-9b6b-48e06b47caaf" target="_blank" rel="noopener noreferrer" className="cert-verify-btn">Verify credential</a>
+          <div className="cert-banner">
+            <div className="cert-banner-text">
+              <h3>ISO/IEC 42001:2023 Lead Auditor (Mastermind Assurance), in progress</h3>
+            </div>
+          </div>
         </div>
 
         <div className="builds-grid">

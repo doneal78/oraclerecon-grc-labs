@@ -426,6 +426,13 @@
 }
 
 /* CERT BANNER */
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
 .cert-banner {
   background: var(--bg2);
   border: 1px solid var(--border);
@@ -437,7 +444,6 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 3rem;
 }
 
 .cert-banner-text h3 {
